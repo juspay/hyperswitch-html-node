@@ -24,6 +24,7 @@ app.post("/create-payment", async (req, res) => {
   const payload = {
     amount: calculateOrderAmount(items),
     currency: "USD",
+    customer_id: "hyperswitch_customer"
   };
 
   const headers = {
